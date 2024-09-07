@@ -9,37 +9,79 @@
   <body>
     <header class="container">
       <div class="header">
-        <div>
+        <div style="display: flex; align-items: center">
           <div style="display: flex; align-items: center; gap: 16px"
             ><img src="images/header-page/logo.png" alt="" />
 
             <div style="font-weight: bold; font-size: 24px">Flow</div>
           </div>
         </div>
-        <div style="display: flex; gap: 32px">
-          <div>Home</div>
-          <div>Solutions</div>
-          <div>About us</div>
-          <div>Team</div>
-          <div>Blog</div>
+        <div style="display: flex; align-items: center; gap: 32px">
+          <div
+            ><a style="text-decoration: none; color: #000" href="#home"
+              >Home</a
+            ></div
+          >
+          <div
+            ><a
+              style="text-decoration: none; color: #000"
+              href="#solutions_section"
+              >Solutions</a
+            ></div
+          >
+          <div>
+            <a
+              style="text-decoration: none; color: #000"
+              href="#about_us_section"
+              >About us</a
+            ></div
+          >
+          <div
+            ><a style="text-decoration: none; color: #000" href="#team">
+              Team</a
+            ></div
+          >
+          <div
+            ><a style="text-decoration: none; color: #000" href="#blog"
+              >Blog</a
+            ></div
+          >
         </div>
         <div
           style="
             display: flex;
             border: 1px solid;
+
             border-radius: 200px;
             padding: 12px 20px;
-            margin-top: 24px;
-            margin-bottom: 24px;
+
             gap: 8px;
-            align-items: center;
+            width: fit-content;
           ">
-          <div>Get in touch</div>
-          <div><img src="images/header-page/rightarrow.png" alt="" /></div>
+          <div><a style="text-decoration: none;color: #000;" href="#get_in_touch">Get in touch</a></div>
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 20 20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M4.75 10H15.25"
+              stroke="#1D1F1E"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round" />
+            <path
+              d="M10 4.75L15.25 10L10 15.25"
+              stroke="#1D1F1E"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
         </div>
       </div>
     </header>
-    <div class="hero-section">
+    <div id="home" class="hero-section">
       <div class="left">
         <div class="left_content">
           <div
@@ -62,15 +104,17 @@
             renewable energy sources transform the way we power our lives.
           </div>
           <div class="button_container" style="margin-top: 40px">
-            <button
+            <a
+              href="#solutions_section"
               style="
                 padding: 16px 24px;
+                text-decoration: none;
                 border-radius: 200px;
                 background-color: rgba(2, 44, 34, 1);
                 color: white;
                 /* font-size: 1vw; */
               "
-              >See our solutions</button
+              >See our solutions</a
             >
             <button
               style="
@@ -80,7 +124,7 @@
                 background-color: white;
                 /* font-size: 1vw; */
               "
-              >Get in touch</button
+              ><a style="text-decoration: none;color: #000;" href="#get_in_touch">Get in touch</a></button
             >
           </div>
         </div>
@@ -141,6 +185,7 @@
         style="
           display: flex;
           align-items: center;
+          padding-top: 30px;
           gap: 8px;
           /* padding: 96px 64px 56px 64px ; */
         ">
@@ -194,7 +239,7 @@
               electricity. Wind farms with multiple turbines are commonly used
               to produce large amounts of clean energy.</div
             >
-            <div>Read more</div>
+            <div style="padding-bottom: 30px">Read more</div>
           </div>
 
           <div class="solutions_section_card">
@@ -384,7 +429,7 @@
       </div>
     </div>
 
-    <div class="blog container">
+    <div id="blog" class="blog container">
       <div>
         <div
           class="blog_head"
@@ -597,6 +642,17 @@
         </div>
       </div>
     </div>
+    <div style="background-color:#022C22;margin-bottom: 96px;border-radius: 24px;" class="container" id="get_in_touch">
+      <div class="contact_container">
+        
+        <div class="contact_heading">Your Source for Green Energy Updates</div>
+        <div class="input_container" >
+          <input style="border-radius: 200px;flex-grow: 1;" placeholder="Your e-mail"></input>
+          <div style="border-radius: 200px;padding: 16px 24px;color: #000;text-wrap: nowrap;background-color: #BEF264;;">get in touch</div>
+        </div>
+      </div>
+    </div>
+
     <footer class="container">
       <div
         style="
@@ -648,7 +704,13 @@
         </div>
       </div>
     </footer>
-    <div class="container" style="text-align: center; margin-top: 107px">
+    <div
+      style="
+        background-color: rgba(190, 242, 100, 1);
+        text-align: center;
+        padding: 10px;
+        margin-top: 107px;
+      ">
       © 2024 Flow. All rights reserved.
     </div>
   </body>

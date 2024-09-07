@@ -5,27 +5,38 @@
   font-family: "Figtree", sans-serif;
   font-style: normal;
 }
+/* header { */
+/* width: 100%; */
+/* } */
 @media (min-width: 300px) {
   .header {
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    margin: 0 auto;
+    display: flex;
     align-items: center;
+    padding: 24px;
+    flex-direction: column;
+    /* display: grid; */
+    /* grid-template-rows: 1fr 1fr 1fr; */
+    margin: 0 auto;
+    gap: 30px;
   }
 }
-@media (min-width: 600px) {
+@media (min-width: 675px) {
   .header {
-    margin-top: 24px;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+  }
+}
 
-    justify-content: space-around;
+@media (min-width: 1000px) {
+  .header {
+    align-items: normal;
   }
 }
 @media (min-width: 300px) {
   .hero-section {
     margin: 0 auto;
-    padding: 112px 96px;
+    padding: 0 50px;
     max-width: 1440px;
     display: flex;
     justify-content: space-around;
@@ -351,6 +362,54 @@
 }
 .textincontainer {
   width: 100%;
+}
+@media (min-width: 300px) {
+  .contact_container {
+    display: grid;
+    grid-template-columns: 1fr;
+    color: white;
+    gap: 35px;
+    place-items: center;
+    padding: 64px 96px;
+  }
+}
+@media (min-width: 300px) {
+  .contact_heading {
+    font-size: 31px;
+    margin-bottom: 10px;
+  }
+}
+
+@media (min-width: 300px) {
+  .input_container {
+    display: flex;
+  }
+}
+@media (min-width: 600px) {
+  .input_container {
+    gap: 8px;
+    width: 50%;
+    width: 70%;
+  }
+}
+@media (min-width: 1200px) {
+  .input_container {
+    width: 100%;
+  }
+}
+input::placeholder {
+  padding: 16px 20px;
+}
+@media (min-width: 1200px) {
+  .contact_heading {
+    font-size: 62px;
+  }
+  .contact_container {
+    padding: 64px 96px;
+    align-items: center;
+    grid-template-columns: 3fr 2fr;
+    gap: 136px;
+  }
 }
 @media (min-width: 300px) {
   footer {
