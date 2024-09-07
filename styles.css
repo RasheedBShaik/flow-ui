@@ -412,7 +412,7 @@ input::placeholder {
   }
 }
 @media (min-width: 300px) {
-  footer {
+  .footer_links {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -421,7 +421,7 @@ input::placeholder {
 }
 
 @media (min-width: 1200px) {
-  footer {
+  .footer_links {
     align-items: normal;
     flex-direction: row;
     justify-content: space-around;
